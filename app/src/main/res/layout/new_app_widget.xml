@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#C35A4E4E"
+                android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:id="@+id/appwidget_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"/>
+
+        <TextClock
+            android:id="@+id/textClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:format12Hour="hh:mm"
+            android:format24Hour="HH:mm"
+            android:gravity="center|center_vertical"
+            android:text="TextClock"
+            android:textAlignment="center"
+            android:textColor="#2E2828"
+            android:textSize="50sp"/>
+
+        <TextClock
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:format12Hour="dd.MM.yyyy"
+            android:format24Hour="dd.MM.yyyy"
+            android:gravity="center|center_vertical"
+            android:text="TextClock"
+            android:textColor="#2E2828"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
